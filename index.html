@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Hello, world!</title>
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        background-image: url('./assets/bg_img.jpg'); 
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .kalam {
+        font-family: 'Kalam', cursive;
+      }
+
+      .center-box {
+        width: 100%;
+        height: 90%;
+        background: white;
+        position: relative;
+      }
+
+      .left-section {
+        width: 30%;
+        padding: 20px;
+        border-right: 1px solid rgb(78, 74, 74);
+      }
+
+      .right-section {
+        width: 70%;
+        padding: 20px;
+      }
+
+      .right-section::-webkit-scrollbar {
+        width: 14px;
+      }
+
+      .right-section::-webkit-scrollbar-thumb {
+        background-color: #2b66c0;
+      }
+
+      .right-section::-webkit-scrollbar-track {
+        background-color: #e9ecef;
+      }
+      .btn {
+        border: 1px solid gray;
+        width: 100%;
+        padding: 6px;
+        background: #297af2;
+        color: white;
+        margin-top: 20px;
+        border-radius: 0px;
+      }
+      .large-txt {
+        font-size: 26px;
+      }
+      .links {
+        width: 100%;
+      }
+      .bg-blue-heading {
+        width: 100%;
+        background: #2b66c0;
+        color: white;
+        padding-left: 6px;
+      }
+      .text-gray {
+        color: rgb(104, 95, 95);
+        font-weight: 700;
+        font-size: 17px;
+      }
+      .t-head {
+        background: rgb(197, 197, 197);
+      }
+      .margin-top {
+        margin-top: 50px;
+      }
+      .neg-margin {
+        margin-top: -18px;
+      }
+      .btn-gradient {
+        background: linear-gradient(to bottom, #297af2, #0056b3);
+        color: white;
+        border: none;
+      }
+
+      .btn-gradient:hover {
+        background: linear-gradient(to bottom, #0056b3, #297af2);
+        color: white;
+      }
+      .absolute-div{
+        position: absolute;
+        top: -20px;
+        right:-20px;
+        background: white;
+        border: 4px solid gray;
+        padding: 5px 10px; 
+        border-radius: 100%;
+        cursor: pointer;
+      }
+      .icon{
+        color: rgb(202, 13, 13);
+        font-weight: bolder;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="d-flex flex-row shadow-sm rounded-7 center-box"
+    >
+      
+      <div class="left-section d-flex flex-column">
+        <img src="./assets/book_cover_image.jpeg" alt="cover_page_img" />
+        <button class="btn kalam large-txt">Place Hold</button>
+        <div
+          class="links d-flex flex-column align-items-end justify-content-end mt-4"
+        >
+          <a href="#" class="text-decoration-none large-txt kalam">Copies</a>
+          <a href="#" class="text-decoration-none large-txt kalam">Summary</a>
+          <a href="#" class="text-decoration-none large-txt kalam"
+            >Reading Levels</a
+          >
+          <a href="#" class="text-decoration-none large-txt kalam">Details</a>
+        </div>
+      </div>
+
+      <div class="right-section d-flex flex-column overflow-auto">
+        <h5 class="large-txt kalam">Wolves</h5>
+        <p class="bg-blue-heading large-txt kalam">Copies</p>
+        <p class="text-gray">Shelf Location at Keyser</p>
+        <table class="table table-bordered">
+          <thead class="t-head">
+            <tr>
+              <th scope="col">Collection</th>
+              <th scope="col">Call Number</th>
+              <th scope="col">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Juvenile Non-Fiction</td>
+              <td>J 599.74 G</td>
+              <td class="fw-bold">Checked In</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="text-gray">Shelf Location at Keyser</p>
+        <table class="table table-bordered">
+          <thead class="t-head">
+            <tr>
+              <th scope="col">Collection</th>
+              <th scope="col">Call Number</th>
+              <th scope="col">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Juvenile Non-Fiction</td>
+              <td>J 599.74 Gibbons</td>
+              <td class="fw-bold">Checked In</td>
+            </tr>
+          </tbody>
+        </table>
+        <div>
+          <p class="bg-blue-heading large-txt margin-top kalam">Summary</p>
+          <p>Just how these long-feared animals live.</p>
+        </div>
+        <div class="d-flex flex-column">
+          <p class="bg-blue-heading large-txt margin-top kalam">
+            Reading Levels
+          </p>
+          <div class="d-flex flex-column gap-1">
+            <p class="fw-bold">Lexile Measure</p>
+            <p class="neg-margin">670L</p>
+          </div>
+          <div class="d-flex flex-column gap-1">
+            <p class="fw-bold">AR Reading Level</p>
+            <p class="neg-margin">4.2</p>
+          </div>
+          <div class="d-flex flex-column gap-1">
+            <p class="fw-bold">AR Interest Level</p>
+            <p class="neg-margin">MG</p>
+          </div>
+          <div class="d-flex flex-column gap-1">
+            <p class="fw-bold">AR Points</p>
+            <p class="neg-margin">0.5</p>
+          </div>
+        </div>
+        <div class="d-flex flex-column">
+          <p class="bg-blue-heading large-txt margin-top kalam">Details</p>
+          <div class="d-flex flex-column gap-1">
+            <p class="fw-bold">Lexile Measure</p>
+            <a href="#" class="text-decoration-none neg-margin"
+              >Gibbons, Gail author</a
+            >
+          </div>
+          <div class="d-flex flex-column gap-1 mt-2">
+            <p class="fw-bold">Lexile Measure</p>
+            <p class="neg-margin">1 volume (unpaged):</p>
+          </div>
+          <div class="d-flex flex-column gap-1">
+            <p class="fw-bold">Lexile Measure</p>
+            <a href="#" class="neg-margin text-decoration-none mb-2"
+              >Wolves -- Juvenile literature</a
+            >
+            <a href="#" class="neg-margin text-decoration-none">Wolves.</a>
+          </div>
+        </div>
+      </div>
+      <div class="absolute-div">
+        <i class="fa-solid fa-x icon"></i>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
